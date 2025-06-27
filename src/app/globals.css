@@ -27,7 +27,7 @@ body {
   padding: 0;
   color: white;
   font-family: sans-serif;
-  background: radial-gradient(circle at center, #222222, #111111, #000000);
+  background: radial-gradient(circle at center, #444444, #222222, #111111);
   background-size: 200% 200%;
   background-position: center center;
   animation: bgRadialShift 40s ease infinite, bassWave 3s ease-in-out infinite;
@@ -50,11 +50,11 @@ body {
 @keyframes bassWave {
   0%,
   100% {
-    filter: brightness(1);
+    filter: brightness(1.1);
     background-size: 180% 180%;
   }
   50% {
-    filter: brightness(1.4);
+    filter: brightness(1.6);
     background-size: 220% 220%;
   }
 }
