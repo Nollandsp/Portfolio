@@ -30,7 +30,8 @@ body {
   background: radial-gradient(circle at center, #444444, #222222, #111111);
   background-size: 200% 200%;
   background-position: center center;
-  animation: bgRadialShift 40s ease infinite, bassWave 3s ease-in-out infinite;
+  animation: bgRadialShift 40s ease infinite;
+  /* ou même la supprimer complètement pour un fond fixe */
   position: relative;
   overflow-x: hidden;
 }

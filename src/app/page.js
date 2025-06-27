@@ -13,13 +13,12 @@ export default function Home() {
 
         <div className="flex space-x-6 text-white text-2xl mr-2">
           <a
-            href="https://github.com/tonprofil"
+            href="https://github.com/Nollandsp"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
             className="hover:text-gray-300"
           >
-            {/* Icône GitHub SVG */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -31,13 +30,12 @@ export default function Home() {
           </a>
 
           <a
-            href="https://linkedin.com/in/tonprofil"
+            href="https://www.linkedin.com/in/nollan-da-silva-pereira-125338250/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
             className="hover:text-gray-300"
           >
-            {/* Icône LinkedIn SVG */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -48,6 +46,146 @@ export default function Home() {
             </svg>
           </a>
         </div>
+      </div>
+
+      <video
+        src="/animation.webm"
+        autoPlay
+        loop
+        muted
+        playsInline
+        style={{ width: "50%", maxWidth: "600px" }}
+        className="mx-auto block w-full max-w-lg mb-6"
+      />
+      <section className="mt-50 flex flex-col items-center">
+        <h2 className="text-center text-2xl font-semibold mb-16">
+          KNOWLEDGE AND GROWTH
+        </h2>
+
+        <div className="relative flex flex-col items-center">
+          <div className="bg-gray-900 text-white text-xl font-bold rounded-lg px-6 py-4 shadow-xl">
+            2025
+          </div>
+          <div className="w-1 h-20 bg-gray-900 mt-2"></div>
+          <p className="text-center mt-5">
+            Titre professionnel certifié Développeur Web et Web Mobile
+          </p>
+          <p>AFCI Beauvais</p>
+        </div>
+      </section>
+
+      <h2 className="text-center mt-40 text-2xl font-semibold">
+        ABOUT MY TECH STACK
+      </h2>
+
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-10">
+        {/* HTML */}
+        <a
+          href="https://developer.mozilla.org/fr/docs/Web/HTML"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-col items-center"
+        >
+          <div className="flex flex-col items-center">
+            <div className="bg-gray-950 rounded-xl shadow-md p-6 w-36 h-36 transition duration-300 sm:hover:shadow-xl sm:hover:-translate-y-1 flex flex-col items-center justify-center">
+              <img src="/html-5.png" alt="HTML5 Logo" className="w-12 h-12" />
+              <p className="mt-3 text-center text-white font-bold">HTML</p>
+            </div>
+          </div>
+        </a>
+
+        {/* CSS */}
+        <a
+          href="https://developer.mozilla.org/fr/docs/Web/CSS"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-col items-center"
+        >
+          <div className="flex flex-col items-center">
+            <div className="bg-gray-950 rounded-xl shadow-md p-6 w-36 h-36 transition duration-300 sm:hover:shadow-xl sm:hover:-translate-y-1 flex flex-col items-center justify-center">
+              <img src="/css-3.png" alt="CSS3 Logo" className="w-12 h-12" />
+              <p className="mt-3 text-center text-white font-bold">CSS</p>
+            </div>
+          </div>
+        </a>
+
+        {/* JavaScript */}
+        <a
+          href="https://developer.mozilla.org/fr/docs/Web/JavaScript"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-col items-center"
+        >
+          <div className="bg-gray-950 rounded-xl shadow-md p-6 w-36 h-36 transition duration-300 sm:hover:shadow-xl sm:hover:-translate-y-1 flex flex-col items-center justify-center">
+            <img src="/js.png" alt="JavaScript Logo" className="w-12 h-12" />
+            <p className="mt-3 text-center text-white font-bold">JavaScript</p>
+          </div>
+        </a>
+
+        {/* NextJs */}
+        <a
+          href="https://nextjs.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-col items-center"
+        >
+          <div className="flex flex-col items-center">
+            <div className="bg-gray-950 rounded-xl shadow-md p-6 w-36 h-36 transition duration-300 sm:hover:shadow-xl sm:hover:-translate-y-1 flex flex-col items-center justify-center">
+              <img src="/nextjs.png" alt="NextJs Logo" className="w-12 h-12" />
+              <p className="mt-3 text-center text-white font-bold">NextJs</p>
+            </div>
+          </div>
+        </a>
+
+        {/* Figma */}
+        <a
+          href="https://www.figma.com/fr-fr/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-col items-center"
+        >
+          <div className="flex flex-col items-center">
+            <div className="bg-gray-950 rounded-xl shadow-md p-6 w-36 h-36 transition duration-300 sm:hover:shadow-xl sm:hover:-translate-y-1 flex flex-col items-center justify-center">
+              <img src="/figma.png" alt="Figma Logo" className="w-12 h-12" />
+              <p className="mt-3 text-center text-white font-bold">Figma</p>
+            </div>
+          </div>
+        </a>
+        {/* Tailwind*/}
+
+        <a
+          href="https://tailwindcss.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-col items-center"
+        >
+          <div className="flex flex-col items-center">
+            <div className="bg-gray-950 rounded-xl shadow-md p-6 w-36 h-36 transition duration-300 sm:hover:shadow-xl sm:hover:-translate-y-1 flex flex-col items-center justify-center">
+              <img
+                src="/tailwind-css.png"
+                alt="Figma Logo"
+                className="w-12 h-12"
+              />
+              <p className="mt-3 text-center text-white font-bold">
+                Tailwind css
+              </p>
+            </div>
+          </div>
+        </a>
+        {/* Github */}
+      </div>
+      <div className="w-full flex justify-center mt-6">
+        <a
+          href="https://github.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-col items-center"
+        >
+          <div className="bg-gray-950 rounded-xl shadow-md p-6 w-36 h-36 transition duration-300 sm:hover:shadow-xl sm:hover:-translate-y-1 flex flex-col items-center justify-center">
+            <img src="/github.png" alt="GitHub Logo" className="w-12 h-12" />
+            <p className="mt-3 text-center text-white font-bold">GitHub</p>
+          </div>
+        </a>
       </div>
     </main>
   );
