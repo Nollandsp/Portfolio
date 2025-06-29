@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { smoothScroll } from "../components/smoothScroll"; // ou utils selon ton dossier
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -56,15 +57,15 @@ const Navbar = () => {
         <ul className="hidden sm:flex space-x-6">
           <li>
             <Link
-              href="/"
+              href="#education"
               className="hover:bg-white hover:text-black px-3 py-1 rounded transition-colors duration-300"
             >
-              Accueil
+              Eduction
             </Link>
           </li>
           <li>
             <Link
-              href="/projets"
+              href="#completed-projects"
               className="hover:bg-white hover:text-black px-3 py-1 rounded transition-colors duration-300"
             >
               Projets
@@ -90,16 +91,16 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
               className="py-1 px-3 block hover:text-yellow-300 transition-colors duration-300"
             >
-              Accueil
+              Eduction
             </Link>
           </li>
           <li>
             <Link
-              href="/projets"
+              href="#completed-projects"
               onClick={() => setIsOpen(false)}
               className="py-1 px-3 block hover:text-yellow-300 transition-colors duration-300"
             >
-              Projets
+              Projects
             </Link>
           </li>
           <li>

@@ -1,3 +1,5 @@
+import ProjectsSection from "../components/Projects";
+
 export default function Home() {
   return (
     <main className="pt-10 max-w-4xl mx-auto px-4">
@@ -57,20 +59,101 @@ export default function Home() {
         style={{ width: "50%", maxWidth: "600px" }}
         className="mx-auto block w-full max-w-lg mb-6"
       />
-      <section className="mt-50 flex flex-col items-center">
-        <h2 className="text-center text-2xl font-semibold mb-16">
-          KNOWLEDGE AND GROWTH
-        </h2>
-
-        <div className="relative flex flex-col items-center">
-          <div className="bg-gray-900 text-white text-xl font-bold rounded-lg px-6 py-4 shadow-xl">
-            2025
+      <h2
+        id="education"
+        className="text-4xl font-bold text-white mb-2 text-center mt-50"
+      >
+        EDUCATION & CERTIFICATIONS
+      </h2>
+      <section className="mt-20 px-1 max-w-4xl mx-auto">
+        <div className="max-w-2xl mx-auto">
+          <div className="flex items-center gap-6 rounded-2xl p-6">
+            <p className="bg-gray-950 text-white px-4 py-2 rounded-md min-w-[90px] text-center font-semibold -ml-4 flex items-center justify-center">
+              2025
+            </p>
+            <div>
+              <p className="font-bold text-white text-lg">
+                Titre Professionnel Certifié Développeur Web
+              </p>
+              <p className="text-gray-400 mt-1">AFCI Beauvais</p>
+            </div>
           </div>
-          <div className="w-1 h-20 bg-gray-900 mt-2"></div>
-          <p className="text-center mt-5">
-            Titre professionnel certifié Développeur Web et Web Mobile
-          </p>
-          <p>AFCI Beauvais</p>
+        </div>
+
+        <div className="max-w-2xl mx-auto">
+          <div className="flex items-center gap-6 rounded-2xl p-6">
+            <p className="bg-gray-950 text-white px-4 py-2 rounded-md min-w-[90px] text-center font-semibold -ml-4 flex items-center justify-center gap-2">
+              2025
+            </p>
+
+            <div className="flex items-center gap-2">
+              <p className="font-bold text-white text-lg flex items-center gap-2">
+                Next.js App Router Fundamentals
+                <img
+                  src="/vercel.svg"
+                  alt="Next.js Logo"
+                  className="w-6 h-6 rounded-md object-cover"
+                />
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-2xl mx-auto">
+          <div className="flex items-center gap-6 rounded-2xl p-6">
+            <p className="bg-gray-950 text-white px-4 py-2 rounded-md min-w-[90px] text-center font-semibold -ml-4 flex items-center justify-center gap-2">
+              2025
+            </p>
+
+            <div className="flex items-center gap-2">
+              <p className="font-bold text-white text-lg flex items-center gap-2">
+                Next.js Pages Router Fundamentals
+                <img
+                  src="/vercel.svg"
+                  alt="Next.js Logo"
+                  className="w-6 h-6 rounded-md object-cover"
+                />
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-2xl mx-auto">
+          <div className="flex items-center gap-6 rounded-2xl p-6">
+            <p className="bg-gray-950 text-white px-4 py-2 rounded-md min-w-[90px] text-center font-semibold -ml-4 flex items-center justify-center gap-2">
+              2025
+            </p>
+
+            <div className="flex items-center gap-2">
+              <p className="font-bold text-white text-lg flex items-center gap-2">
+                Next.js SEO Fundamentals
+                <img
+                  src="/vercel.svg"
+                  alt="Next.js Logo"
+                  className="w-6 h-6 rounded-md object-cover"
+                />
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-2xl mx-auto">
+          <div className="flex items-center gap-6 rounded-2xl p-6">
+            <p className="bg-gray-950 text-white px-4 py-2 rounded-md min-w-[90px] text-center font-semibold -ml-4 flex items-center justify-center gap-2">
+              2025
+            </p>
+
+            <div className="flex items-center gap-2">
+              <p className="font-bold text-white text-lg flex items-center gap-2">
+                React Foundations for Next.js
+                <img
+                  src="/vercel.svg"
+                  alt="Next.js Logo"
+                  className="w-6 h-6 rounded-md object-cover"
+                />
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -78,7 +161,7 @@ export default function Home() {
         ABOUT MY TECH STACK
       </h2>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-10">
+      <section className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-10">
         {/* HTML */}
         <a
           href="https://developer.mozilla.org/fr/docs/Web/HTML"
@@ -173,7 +256,7 @@ export default function Home() {
           </div>
         </a>
         {/* Github */}
-      </div>
+      </section>
       <div className="w-full flex justify-center mt-6">
         <a
           href="https://github.com/"
@@ -187,6 +270,7 @@ export default function Home() {
           </div>
         </a>
       </div>
+      <ProjectsSection />
     </main>
   );
 }

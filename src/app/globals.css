@@ -22,41 +22,84 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
   color: white;
   font-family: sans-serif;
-  background: radial-gradient(circle at center, #444444, #222222, #111111);
-  background-size: 200% 200%;
-  background-position: center center;
-  animation: bgRadialShift 40s ease infinite;
-  /* ou même la supprimer complètement pour un fond fixe */
-  position: relative;
+  height: 100vh;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.015),
+    #1e1e1e,
+    #000000
+  );
+  background-size: 400% 400%;
+  animation: bassPulse 12s ease-in-out infinite;
   overflow-x: hidden;
+  position: relative;
+  overflow-y: auto;
 }
 
-@keyframes bgRadialShift {
+/* Cercle blanc flou qui se balade */
+#moving-circle {
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.03) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  filter: blur(90px);
+  pointer-events: none;
+  z-index: -1;
+  animation: moveAround 30s ease-in-out infinite alternate;
+}
+
+@keyframes bassPulse {
   0% {
-    background-position: 40% 40%;
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 100% 50%;
   }
   50% {
-    background-position: 60% 60%;
+    background-position: 50% 100%;
+  }
+  75% {
+    background-position: 0% 50%;
   }
   100% {
-    background-position: 40% 40%;
+    background-position: 50% 0%;
   }
 }
 
-@keyframes bassWave {
-  0%,
-  100% {
-    filter: brightness(1.1);
-    background-size: 180% 180%;
+@keyframes moveAround {
+  0% {
+    transform: translate(0, 0);
   }
-  50% {
-    filter: brightness(1.6);
-    background-size: 220% 220%;
+  20% {
+    transform: translate(35vw, 20vh);
+  }
+  40% {
+    transform: translate(-30vw, 25vh);
+  }
+  60% {
+    transform: translate(20vw, -30vh);
+  }
+  80% {
+    transform: translate(-25vw, -20vh);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
 
