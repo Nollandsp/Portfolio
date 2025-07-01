@@ -2,7 +2,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { smoothScroll } from "../components/smoothScroll"; // ou utils selon ton dossier
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -58,7 +57,8 @@ const Navbar = () => {
           <li>
             <Link
               href="#education"
-              className="hover:bg-white hover:text-black px-3 py-1 rounded transition-colors duration-300"
+              className="hover:bg-white hover:text-black px-3 py-1 rounded transition-colors duration-300 font-bold
+"
             >
               Eduction
             </Link>
@@ -66,7 +66,8 @@ const Navbar = () => {
           <li>
             <Link
               href="#completed-projects"
-              className="hover:bg-white hover:text-black px-3 py-1 rounded transition-colors duration-300"
+              className="hover:bg-white hover:text-black px-3 py-1 rounded transition-colors duration-300 font-bold
+ "
             >
               Projets
             </Link>
@@ -74,7 +75,8 @@ const Navbar = () => {
           <li>
             <Link
               href="/contact"
-              className="hover:bg-white hover:text-black px-3 py-1 rounded transition-colors duration-300"
+              className="hover:bg-white hover:text-black px-3 py-1 rounded transition-colors duration-300 font-bold
+"
             >
               Contact
             </Link>
@@ -84,7 +86,10 @@ const Navbar = () => {
 
       {/* Menu burger déroulant (mobile) */}
       {isOpen && (
-        <ul className="sm:hidden border border-white rounded-2xl py-2 px-4 flex space-x-4 justify-center items-center max-w-md mx-auto mt-5">
+        <ul
+          className="sm:hidden border border-white rounded-2xl py-2 px-4 flex space-x-4 justify-center items-center max-w-md mx-auto mt-5 font-bold
+"
+        >
           <li>
             <Link
               href="/"

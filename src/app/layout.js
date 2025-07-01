@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navbar from "../components/navbar";
+import Footer from "../components/Footer";
 
 export const metadata = {
   title: "Mon Portfolio",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
 
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
