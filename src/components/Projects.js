@@ -52,8 +52,8 @@ const ProjectsSection = () => {
             COMPLETED PROJECTS
           </h2>
           <p className="text-xl text-gray-300 leading-relaxed">
-            Découvrez mes créations et réalisations techniques, de l&apos;idée à la
-            mise en production
+            Discover my creations and technical achievements, from ideas to
+            productions.
           </p>
         </div>
 
