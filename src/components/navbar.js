@@ -69,12 +69,12 @@ const Navbar = () => {
               className="hover:bg-white hover:text-black px-3 py-1 rounded transition-colors duration-300 font-bold
  "
             >
-              Projets
+              Projects
             </Link>
           </li>
           <li>
             <Link
-              href="/contact"
+              href="#contact"
               className="hover:bg-white hover:text-black px-3 py-1 rounded transition-colors duration-300 font-bold
 "
             >
@@ -110,7 +110,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              href="/contact"
+              href="#contact"
               onClick={() => setIsOpen(false)}
               className="py-1 px-3 block hover:text-yellow-300 transition-colors duration-300"
             >

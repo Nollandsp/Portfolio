@@ -74,7 +74,6 @@ export default function Home() {
         playsInline
         className="mx-auto block w-1/2 max-w-xs sm:w-2/5 sm:max-w-sm md:w-1/3 md:max-w-md mb-6 sm:my-10"
       />
-
       <Button
         asChild
         variant="outline"
@@ -124,14 +123,17 @@ export default function Home() {
                 </p>
 
                 <div className="flex items-center gap-2">
-                  <p className="font-bold text-white text-lg flex items-center gap-2">
+                  <a
+                    href="https://nextjs.org/learn/certificate?course=dashboard-app&user=66005&certId=dashboard-app-66005-1751398108007"
+                    className="font-bold text-white text-lg flex items-center gap-2 hover:text-yellow-400 transition-colors"
+                  >
                     Next.js App Router Fundamentals
-                    <image
+                    <img
                       src="/vercel.svg"
                       alt="Next.js Logo"
                       className="w-6 h-6 rounded-md object-cover"
                     />
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -143,14 +145,17 @@ export default function Home() {
                 </p>
 
                 <div className="flex items-center gap-2">
-                  <p className="font-bold text-white text-lg flex items-center gap-2">
+                  <a
+                    href="https://nextjs.org/learn/certificate?course=pages-router&user=66005&certId=pages-router-66005-1751398087787"
+                    className="font-bold text-white text-lg flex items-center gap-2 hover:text-yellow-400 transition-colors"
+                  >
                     Next.js Pages Router Fundamentals
-                    <image
+                    <img
                       src="/vercel.svg"
                       alt="Next.js Logo"
                       className="w-6 h-6 rounded-md object-cover"
                     />
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -162,14 +167,17 @@ export default function Home() {
                 </p>
 
                 <div className="flex items-center gap-2">
-                  <p className="font-bold text-white text-lg flex items-center gap-2">
+                  <a
+                    href="https://nextjs.org/learn/certificate?course=seo&user=66005&certId=seo-66005-1751398064903"
+                    className="font-bold text-white text-lg flex items-center gap-2 hover:text-yellow-400 transition-colors"
+                  >
                     Next.js SEO Fundamentals
-                    <image
+                    <img
                       src="/vercel.svg"
                       alt="Next.js Logo"
                       className="w-6 h-6 rounded-md object-cover"
                     />
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -181,23 +189,27 @@ export default function Home() {
                 </p>
 
                 <div className="flex items-center gap-2">
-                  <p className="font-bold text-white text-lg flex items-center gap-2">
+                  <a
+                    href="https://nextjs.org/learn/certificate?course=react-foundations&user=66005&certId=react-foundations-66005-1751398037783"
+                    className="font-bold text-white text-lg flex items-center gap-2 hover:text-yellow-400 transition-colors"
+                  >
                     React Foundations for Next.js
-                    <image
+                    <img
                       src="/vercel.svg"
                       alt="Next.js Logo"
                       className="w-6 h-6 rounded-md object-cover"
                     />
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>
           </>
         )}
       </section>
-
-      {/* Section ABOUT MY TECH STACK */}
-      <h2 className="text-center mt-40 text-4xl sm:text-xl md:text-2xl font-semibold">
+      <h2
+        id="projects"
+        className="text-4xl font-bold text-white mb-2 text-center mt-60"
+      >
         ABOUT MY TECH STACK
       </h2>
       <section className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-10 max-w-4xl mx-auto px-2">
@@ -269,16 +281,16 @@ export default function Home() {
           </div>
         </a>
 
-        {/* Ligne Tailwind CSS + GitHub */}
-        <div className="md:col-span-4 flex justify-center gap-10 flex-wrap mt-4">
+        {/* Ligne Tailwind CSS + Figma côte à côte */}
+        <div className="md:col-span-4 flex justify-center gap-10 mt-4 flex-wrap">
           {/* Tailwind CSS */}
           <a
             href="https://tailwindcss.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center"
+            className="flex flex-col items-center w-36"
           >
-            <div className="bg-gray-950 rounded-xl shadow-md p-6 w-36 h-36 transition duration-300 sm:hover:shadow-xl sm:hover:-translate-y-1 flex flex-col items-center justify-center">
+            <div className="bg-gray-950 rounded-xl shadow-md p-6 h-36 transition duration-300 sm:hover:shadow-xl sm:hover:-translate-y-1 flex flex-col items-center justify-center">
               <img
                 src="/tailwind-css.png"
                 alt="Tailwind CSS Logo"
@@ -290,31 +302,12 @@ export default function Home() {
             </div>
           </a>
 
-          {/* GitHub */}
-          <a
-            href="https://github.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-col items-center"
-          >
-            <div className="bg-gray-950 rounded-xl shadow-md p-6 w-36 h-36 transition duration-300 sm:hover:shadow-xl sm:hover:-translate-y-1 flex flex-col items-center justify-center">
-              <img
-                src="/github.png"
-                alt="Git Logo"
-                className="w-12 sm:w-14 md:w-16 h-auto"
-              />
-              <p className="mt-3 text-center text-white font-bold">GitHub</p>
-            </div>
-          </a>
-        </div>
-
-        {/* Ligne Figma centrée */}
-        <div className="md:col-span-4 flex justify-center mt-8">
+          {/* Figma */}
           <a
             href="https://www.figma.com/fr-fr/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center"
+            className="flex flex-col items-center w-36"
           >
             <div className="bg-gray-950 rounded-xl shadow-md p-6 w-36 h-36 transition duration-300 sm:hover:shadow-xl sm:hover:-translate-y-1 flex flex-col items-center justify-center">
               <img
@@ -323,6 +316,24 @@ export default function Home() {
                 className="w-12 sm:w-14 md:w-16 h-auto"
               />
               <p className="mt-3 text-center text-white font-bold">Figma</p>
+            </div>
+          </a>
+        </div>
+
+        <div className="md:col-span-4 flex justify-center mt-4">
+          <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center w-36"
+          >
+            <div className="bg-gray-950 rounded-xl shadow-md p-6 w-36 h-36 transition duration-300 sm:hover:shadow-xl sm:hover:-translate-y-1 flex flex-col items-center justify-center">
+              <img
+                src="/github.png"
+                alt="Git Logo"
+                className="w-12 sm:w-14 md:w-16 h-auto"
+              />
+              <p className="mt-3 text-center text-white font-bold">GitHub</p>
             </div>
           </a>
         </div>

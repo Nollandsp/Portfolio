@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Contact() {
   return (
-    <section>
+    <section id="contact">
       <h2 className="text-center mt-20 text-2xl font-semibold text-white">
         PROJECTS IDEAS ?
       </h2>
