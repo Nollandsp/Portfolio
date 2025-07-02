@@ -11,7 +11,7 @@ const ProjectsSection = () => {
       id: 1,
       title: "Weathora",
       description:
-        "Weathora est une application météo simple et intuitive, centrée exclusivement sur les villes françaises. Elle permet à l&apos;utilisateur de saisir le nom d&apos;une ville et d&apos;obtenir rapidement ses conditions météorologiques actuelles.",
+        "Weathora is a simple and intuitive weather app, focused exclusively on French cities. It allows the user to enter the name of a city and quickly obtain its current weather conditions.",
       image: "/weathora.png",
       github: "https://github.com/Nollandsp/Weathora",
       technologies: ["HTML", "CSS", "Javascript"],
@@ -20,7 +20,7 @@ const ProjectsSection = () => {
       id: 2,
       title: "EventMate",
       description:
-        "EventMate est une application web qui permet à n&apos;importe qui d&apos;organiser ses évènements sur scène.",
+        "EventMate is a web application that allows anyone to organize their own live events.",
       image: "/eventmate.png",
       github: "https://github.com/Nollandsp/EventMate",
       technologies: ["HTML", "CSS", "Javascript", "Supabase"],
@@ -29,7 +29,7 @@ const ProjectsSection = () => {
       id: 3,
       title: "Sport.com",
       description:
-        "Sport.com est un site qui permet de retrouver des articles de sports de combats.",
+        "Sport.com is a site that allows you to find combat sports articles.",
       image: "/sport.png",
       github: "https://github.com/Nollandsp/sport.com",
       technologies: ["HTML", "CSS"],
